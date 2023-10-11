@@ -1,9 +1,9 @@
 ﻿using CommandDotNet;
 using CommandDotNet.Diagnostics;
 using CommandDotNet.IoC.MicrosoftDependencyInjection;
-using MarkLogicClient.Extensions;
-using MarkLogicConsole.Commands;
-using MarkLogicConsole.Providers;
+using MarkLogicNet.Extensions;
+using MarkLogicNetCmd.Commands;
+using MarkLogicNetCmd.Providers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -15,7 +15,7 @@ builder.Services.AddLogging(options => options
     .ClearProviders()
     .AddConfiguration(builder.Configuration.GetSection("Logging")));
 
-builder.Services.AddTransient<ServiceCall>();
+builder.Services.AddTransient<MarkLogicService>();
 builder.Services.AddMarkLogicClient();
 builder.Services.AddSingleton<ExecuteCommand>();
 

@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 
-namespace MarkLogicClient.Models
+namespace MarkLogicNet.Models
 {
     public class MarkLogicResponse
     {

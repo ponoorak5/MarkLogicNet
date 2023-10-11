@@ -1,20 +1,21 @@
-﻿using MarkLogicClient.Models;
-using MarkLogicClient.Utilities;
+﻿using MarkLogicNet;
+using MarkLogicNet.Models;
+using MarkLogicNet.Utilities;
 
-namespace MarkLogicConsole.Providers
+namespace MarkLogicNetCmd.Providers
 {
-    public class ServiceCall
+    public class MarkLogicService
     {
-        private readonly MarkLogicClient.MarkLogicClient _markLogicClient;
+        private readonly MarkLogicClient _markLogicClient;
 
-        public ServiceCall(MarkLogicClient.MarkLogicClient markLogicClient)
+        public MarkLogicService(MarkLogicClient markLogicClient)
         {
             _markLogicClient = markLogicClient;
         }
 
         public async Task<bool> Execute(string script, QueryLanguage language, CancellationToken token)
         {
-            var result = await _markLogicClient.ExecuteScript(script, language, token);
+             var result = await _markLogicClient.ExecuteScript(script, language, token);
 
             if (result.HasError)
             {

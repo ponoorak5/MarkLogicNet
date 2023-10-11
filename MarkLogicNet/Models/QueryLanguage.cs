@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace MarkLogicClient.Models
+namespace MarkLogicNet.Models
 {
     public enum QueryLanguage
     {

@@ -1,10 +1,7 @@
-﻿using MarkLogicClient.Models.Configuration;
-using Microsoft.Extensions.Configuration;
+﻿using MarkLogicNet.Models.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net.Http;
-using System;
 
-namespace MarkLogicClient.Extensions
+namespace MarkLogicNet.Extensions
 {
     public static class ServiceCollectionExtension
     {

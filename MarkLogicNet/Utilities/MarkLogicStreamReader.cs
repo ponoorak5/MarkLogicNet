@@ -2,9 +2,9 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using MarkLogicClient.Models;
+using MarkLogicNet.Models;
 
-namespace MarkLogicClient.Utilities
+namespace MarkLogicNet.Utilities
 {
     public class MarkLogicStreamReader : StreamReader
     {

@@ -15,20 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MarkLogicClient\MarkLogicClient.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="appsettings.Development.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
       <None Update="appsettings.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
-
     <ItemGroup>
-      <Folder Include="Infrastructure\" />
-      <Folder Include="Properties\" />
+      <ProjectReference Include="..\MarkLogicNet\MarkLogicNet.csproj" />
     </ItemGroup>
 </Project>

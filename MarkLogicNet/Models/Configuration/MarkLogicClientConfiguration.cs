@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 
-namespace MarkLogicClient.Models.Configuration
+namespace MarkLogicNet.Models.Configuration
 {
     public class MarkLogicClientConfiguration
     {
