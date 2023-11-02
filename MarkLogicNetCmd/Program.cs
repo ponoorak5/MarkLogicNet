@@ -2,6 +2,7 @@
 using CommandDotNet.Diagnostics;
 using CommandDotNet.IoC.MicrosoftDependencyInjection;
 using MarkLogicNet.Extensions;
+using MarkLogicNet.Models.Configuration;
 using MarkLogicNetCmd.Commands;
 using MarkLogicNetCmd.Providers;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,11 +18,11 @@ builder.Services.AddLogging(options => options
 
 builder.Services.AddTransient<MarkLogicService>();
 builder.Services.AddMarkLogicClient();
-builder.Services.AddSingleton<ExecuteCommand>();
+builder.Services.AddSingleton<Commands>();
 
 var host = builder.Build();
 
-return new AppRunner<ExecuteCommand>()
+return new AppRunner<Commands>()
     .UseMicrosoftDependencyInjection(host.Services)
     .UseCancellationHandlers()
     .UseDebugDirective()
