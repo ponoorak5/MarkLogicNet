@@ -18,11 +18,11 @@ https://www.marklogic.com</Description>
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+      <PackagePath></PackagePath>
     </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
