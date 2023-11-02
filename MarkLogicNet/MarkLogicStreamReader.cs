@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MarkLogicNet.Models;
 
-namespace MarkLogicNet.Utilities
+namespace MarkLogicNet
 {
     public class MarkLogicStreamReader : StreamReader
     {

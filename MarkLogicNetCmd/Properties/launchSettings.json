@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MarkLogicNetCmd": {
+      "commandName": "Project",
+      "commandLineArgs": "Eval"
+    }
+  }
+}
